@@ -3,7 +3,7 @@
 
 It takes a standard, working stat-arb pipeline (PCA factor model, Ornstein-Uhlenbeck residual estimation, s-score trading rules) and tests a few independent extensions to see if we can improve the baseline performance. 
 
-## The TL;DR
+## Brief Summary
 The biggest performance boost didn't come from fancier math—it came from fixing a couple of oversights in the original implementation (specifically, applying a beta-neutral hedge that was computed but ignored). 
 
 Attempting to "upgrade" the model by using a Kalman filter or GICS sector factors actually **underperformed** the basic PCA + OLS setup over the full sample, though they showed interesting behavior during the 2020 COVID crash.
